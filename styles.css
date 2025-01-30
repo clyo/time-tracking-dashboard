@@ -1,0 +1,86 @@
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Lightred: hsl(15, 100%, 70%);
+    --Softblue: hsl(195, 74%, 62%);
+    --Lightred: hsl(348, 100%, 68%);
+    --Limegreen: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Softorange: hsl(43, 84%, 65%);
+    --Verydarkblue: hsl(226, 43%, 10%);
+    --Darkblue: hsl(235, 46%, 20%);
+    --Desaturatedblue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+    }
+
+@font-face {
+    font-family: Rubik300;
+    font-weight: 300;
+    src: url('https://fonts.googleapis.com/css?family=Rubik');
+   }
+    
+
+   @font-face {
+    font-family: Rubik400;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css?family=Rubik');
+   }
+
+   
+@font-face {
+    font-family: Rubik500;
+    font-weight: 500;
+    src: url('https://fonts.googleapis.com/css?family=Rubik');
+   }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Verydarkblue);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 4;
+    gap: 30px
+}
+
+.profile_card {
+    grid-row: 1/3;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.profile_card .top {
+    background-color: var(--Blue);
+    height: 60%;
+    border-radius: 10px;
+}
+
+.profile_card .bottom {
+    background-color: var(--Darkblue);
+    height: 40%;
+
+}
+
+.work_card {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.play_card {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.study_card {
+    grid-row: 1;
+    grid-column: 4;
+}
