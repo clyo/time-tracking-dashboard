@@ -41,7 +41,7 @@ body {
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 5%;
     display: grid;
@@ -56,18 +56,34 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    width: 70%;
+
 }
 
 .profile_card .top {
     background-color: var(--Blue);
-    height: 60%;
+    height: 80%;
     border-radius: 10px;
+    position: relative;
+    top: 10px;
 }
 
 .profile_card .bottom {
     background-color: var(--Darkblue);
     height: 40%;
+    border-radius: 10px;
+}
 
+.profileImg {
+    width: 40%;
+    margin: 12%;
+    outline: white solid 3px;
+    border-radius: 100px;
+}
+
+.profile_card h1,.profile_card h3 {
+    margin-left: 12%;
+    word-wrap: break-word;
 }
 
 .work_card {
